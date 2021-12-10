@@ -18,7 +18,7 @@
         android:layout_marginBottom="560dp"
         android:rotationX="-4"
         android:text="StarShape"
-        android:textColor="#2196F3"
+        android:textColor="#ebeb34"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
