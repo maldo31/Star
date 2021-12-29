@@ -38,6 +38,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:background="@color/black"
+        android:onClick="Run"
         android:text="Run"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name" />

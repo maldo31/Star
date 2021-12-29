@@ -25,6 +25,7 @@ public class Map extends AppCompatActivity {
         mMapView.getZoomController().setVisibility(CustomZoomButtonsController.Visibility.SHOW_AND_FADEOUT);
         mMapController = (MapController) mMapView.getController();
         mMapController.setZoom(13);
+
         GeoPoint gPt = new GeoPoint(51759445, 19457216);
         mMapController.setCenter(gPt);
     }
