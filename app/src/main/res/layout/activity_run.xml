@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg">
+    android:background="?attr/background">
 
     <TextView
         android:id="@+id/avrspeed"
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="80dp"
-        android:backgroundTint="@color/button"
+        style="@style/MyButton"
         android:onClick="stop"
         android:text="STOP"
         app:layout_constraintBottom_toBottomOf="parent"

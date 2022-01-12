@@ -14,5 +14,19 @@
     <color name="starshape">#FFFFFFFF</color>
     <color name="underText">#FF2661c0</color>
     <color name="text">#FFFFFFFF</color>
+    <color name="slider">#FF2661c0</color>
+    <color name="editText">#FF1d4b95</color>
 
+    <color name="bgNight">#FF0d2040</color>
+    <color name="buttonNight">#FF08162b</color>
+    <color name="buttonMainNight">#FF040b15</color>
+    <color name="starshapeNight">#FFFFFFFF</color>
+    <color name="underTextNight">#FF040b15</color>
+    <color name="textNight">#FFFFFFFF</color>
+    <color name="sliderNight">#FF040b15</color>
+    <color name="editTextNight">#FF040b15</color>
+
+
+    <color name="colorSwitchThumbNormal">#fff1f1f1</color>
+    <color name="colorSwitchForeground">#42221f1f</color>
 </resources>

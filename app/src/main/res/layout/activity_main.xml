@@ -4,8 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="?attr/background"
     tools:context=".MainActivity">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MySlider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutBtn" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:layout_width="100dp"
@@ -43,7 +66,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="604dp"
         android:layout_marginEnd="100dp"
-        android:backgroundTint="@color/button"
+        style="@style/MyButton"
         android:onClick="logout"
         android:text="Logout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +81,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="25dp"
-        android:backgroundTint="@color/buttonMain"
+        style="@style/MyButtonMain"
         android:onClick="Run"
         android:text="Run"
         app:layout_constraintBottom_toTopOf="@+id/achievBtn"
@@ -72,7 +95,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="25dp"
-        android:backgroundTint="@color/buttonMain"
+        style="@style/MyButtonMain"
         android:text="Achievments"
         app:layout_constraintBottom_toTopOf="@+id/OptionsBtn"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +108,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/buttonMain"
+        style="@style/MyButtonMain"
         android:onClick="Map"
         android:text="Map"
         app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
@@ -99,7 +122,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="25dp"
-        android:backgroundTint="@color/buttonMain"
+        style="@style/MyButtonMain"
         android:text="Options"
         app:layout_constraintBottom_toTopOf="@+id/mapBtn"
         app:layout_constraintEnd_toEndOf="parent"

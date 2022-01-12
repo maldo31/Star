@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="?attr/background"
     tools:context=".Register">
-
 
     <TextView
         android:id="@+id/textView2"
@@ -31,16 +30,17 @@
 
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -49,6 +49,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="42dp"
+        style="@style/MyEditText"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -64,6 +65,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="42dp"
+        style="@style/MyEditText"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -79,6 +81,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="42dp"
+        style="@style/MyEditText"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -93,7 +96,7 @@
         android:layout_marginStart="158dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="158dp"
-        android:backgroundTint="@color/button"
+        style="@style/MyButton"
         android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
@@ -109,7 +112,7 @@
         android:layout_marginEnd="146dp"
         android:textAlignment="center"
         android:text="Already Registered"
-        android:textColor="@color/underText"
+        style="@style/MyUnderText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

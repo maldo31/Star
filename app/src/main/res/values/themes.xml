@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="background">@color/bg</item>
     </style>
 
     <style name="Theme.Star.NoActionBar">
@@ -22,4 +23,30 @@
     <style name="Theme.Star.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Star.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyButtonMain" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/buttonMain</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="MyButton" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/button</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="MyUnderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/underText</item>
+    </style>
+
+    <style name="MyEditText" parent="Widget.AppCompat.TextView">
+        <item name="android:backgroundTint">@color/editText</item>
+    </style>
+
+    <style name="MySlider" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/buttonMain</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorSwitchThumbNormal</item>
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/colorSwitchForeground</item>
+    </style>
 </resources>

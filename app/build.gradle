@@ -47,6 +47,8 @@ dependencies {
 
     implementation 'pub.devrel:easypermissions:3.0.0'
 
+    implementation 'com.google.android.material:material:1.2.1'
+
         // For developers using the Android Support Library
 
 
