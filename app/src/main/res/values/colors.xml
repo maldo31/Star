@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="bg">#FF3c78d8</color>
+    <color name="button">#FF2a6cd5</color>
+    <color name="buttonMain">#FF2661c0</color>
+    <color name="starshape">#FFFFFFFF</color>
+    <color name="underText">#FF2661c0</color>
+    <color name="text">#FFFFFFFF</color>
+
 </resources>
