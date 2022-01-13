@@ -8,25 +8,50 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="bg">#FF3c78d8</color>
-    <color name="button">#FF2a6cd5</color>
-    <color name="buttonMain">#FF2661c0</color>
-    <color name="starshape">#FFFFFFFF</color>
-    <color name="underText">#FF2661c0</color>
-    <color name="text">#FFFFFFFF</color>
-    <color name="slider">#FF2661c0</color>
-    <color name="editText">#FF1d4b95</color>
+    <color name="bg">@color/c54</color>
+    <color name="button">@color/c50</color>
+    <color name="buttonMain">@color/c45</color>
+    <color name="starshape">@color/c100</color>
+    <color name="underText">@color/c45</color>
+    <color name="text">@color/c100</color>
+    <color name="slider">@color/c45</color>
+    <color name="editText">@color/c35</color>
 
-    <color name="bgNight">#FF0d2040</color>
-    <color name="buttonNight">#FF08162b</color>
-    <color name="buttonMainNight">#FF040b15</color>
-    <color name="starshapeNight">#FFFFFFFF</color>
-    <color name="underTextNight">#FF040b15</color>
-    <color name="textNight">#FFFFFFFF</color>
-    <color name="sliderNight">#FF040b15</color>
-    <color name="editTextNight">#FF040b15</color>
+    <color name="bgNight">@color/c15</color>
+    <color name="buttonNight">@color/c10</color>
+    <color name="buttonMainNight">@color/c5</color>
+    <color name="starshapeNight">@color/c100</color>
+    <color name="underTextNight">@color/c5</color>
+    <color name="textNight">@color/c100</color>
+    <color name="sliderNight">@color/c5</color>
+    <color name="editTextNight">@color/c5</color>
 
 
     <color name="colorSwitchThumbNormal">#fff1f1f1</color>
     <color name="colorSwitchForeground">#42221f1f</color>
+
+    <!-- Color palette -->
+    <color name="c100">#ffffffff</color>
+    <color name="c95">#ffeaf0fb</color>
+    <color name="c90">#ffd4e2f7</color>
+    <color name="c85">#ffbfd3f2</color>
+    <color name="c80">#ffaac4ee</color>
+    <color name="c75">#ff95b5ea</color>
+    <color name="c70">#ff7fa7e6</color>
+    <color name="c65">#ff6a98e2</color>
+    <color name="c60">#ff5589dd</color>
+    <color name="c55">#ff3f7ad9</color>
+    <color name="c54">#ff3c78d8</color>
+    <color name="c50">#ff2a6cd5</color>
+    <color name="c45">#ff2661c0</color>
+    <color name="c40">#ff2256aa</color>
+    <color name="c35">#ff1d4b95</color>
+    <color name="c30">#ff194180</color>
+    <color name="c25">#ff15366a</color>
+    <color name="c20">#ff112b55</color>
+    <color name="c15">#ff0d2040</color>
+    <color name="c10">#ff08162b</color>
+    <color name="c5">#ff040b15</color>
+    <color name="c0">#ff000000</color>
+
 </resources>
