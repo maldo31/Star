@@ -18,10 +18,12 @@
         app:layout_constraintTop_toBottomOf="@+id/logoutBtn" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/Name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,17 +33,18 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/imageViewModeIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="@+id/switchMaterial"
+        app:layout_constraintEnd_toStartOf="@+id/switchMaterial"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.978" />
 
     <TextView
         android:id="@+id/Name"
