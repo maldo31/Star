@@ -128,15 +128,15 @@ public class Run extends AppCompatActivity {
             double distance=p1.distanceTo(p2);
             totalDistance =Math.round( (totalDistance + distance)* 100.0) / 100.0;
             speed = Math.round(distance * 100.0) / 100.0;
-            speedView.setText(String.valueOf(speed));
-            distanceView.setText(String.valueOf(totalDistance));
+            speedView.setText(String.valueOf(speed)+" m/s");
+            distanceView.setText(String.valueOf(totalDistance)+" m");
              Instant instant = Instant.now();
              if(totalDistance!=0) {
                  avrSpeed =   totalDistance/(instant.getEpochSecond() - startStampSeconds);
 
              }
              avrSpeed = Math.round(avrSpeed * 100.0) / 100.0;
-             avrSpeedView.setText(String.valueOf(avrSpeed));
+             avrSpeedView.setText(String.valueOf(avrSpeed)+" m/s");
 
 
 
