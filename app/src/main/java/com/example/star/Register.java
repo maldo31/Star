@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
-    EditText mUsername,mEmail,mPassword;
+    EditText mUsername,mEmail,mPassword,mConfirmPassword;
     Button mRegisterBtn;
     TextView mLoginBtn;
     FirebaseAuth fAuth;
@@ -29,10 +29,9 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        mUsername = findViewById(R.id.editUsername);
         mEmail = findViewById(R.id.editTextTextEmailAddress);
         mPassword = findViewById(R.id.editTextTextPassword2);
+        mConfirmPassword = findViewById(R.id.ConfirmPassword);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.createText);
 
@@ -51,6 +50,10 @@ public class Register extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is Required");
+                    return;
+                }
+                if(!mPassword.equals(mConfirmPassword)){
+                    mConfirmPassword.setError("Passwords must be the same!");
                     return;
                 }
 
