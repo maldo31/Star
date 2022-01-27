@@ -83,7 +83,7 @@
         android:layout_marginEnd="42dp"
         style="@style/MyEditText"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
