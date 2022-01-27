@@ -12,7 +12,7 @@
     <color name="button">@color/c50</color>
     <color name="buttonMain">@color/c45</color>
     <color name="starshape">@color/c100</color>
-    <color name="underText">@color/c45</color>
+    <color name="underText">@color/c35</color>
     <color name="text">@color/c100</color>
     <color name="slider">@color/c45</color>
     <color name="editText">@color/c35</color>
@@ -21,7 +21,7 @@
     <color name="buttonNight">@color/c10</color>
     <color name="buttonMainNight">@color/c5</color>
     <color name="starshapeNight">@color/c100</color>
-    <color name="underTextNight">@color/c5</color>
+    <color name="underTextNight">@color/c100</color>
     <color name="textNight">@color/c100</color>
     <color name="sliderNight">@color/c5</color>
     <color name="editTextNight">@color/c5</color>
