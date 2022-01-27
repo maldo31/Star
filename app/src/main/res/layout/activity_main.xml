@@ -36,15 +36,27 @@
         android:id="@+id/imageViewModeIcon"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="650dp"
         android:contentDescription="@string/logo"
         android:src="@drawable/sun"
-        app:layout_constraintBottom_toBottomOf="@+id/switchMaterial"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/switchMaterial"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewModeIcon2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="155dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/moonno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/switchMaterial"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Name"

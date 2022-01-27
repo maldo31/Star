@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected GPSTracker gpsTracker;
     ImageView imageViewMode;
+    ImageView imageViewMode2;
     SwitchCompat switchCompat;
     SharedPreferences sharedPreferences = null;
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         checkRunTimePermission();
 
         imageViewMode = findViewById(R.id.imageViewModeIcon);
+        imageViewMode2 = findViewById(R.id.imageViewModeIcon2);
         switchCompat = findViewById(R.id.switchMaterial);
 
         sharedPreferences = getSharedPreferences("night", 0);
@@ -47,7 +49,13 @@ public class MainActivity extends AppCompatActivity {
         if (booleanValue){
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             switchCompat.setChecked(true);
-            imageViewMode.setImageResource(R.drawable.moon);
+            imageViewMode.setImageResource(R.drawable.sunno);
+            imageViewMode2.setImageResource(R.drawable.moon);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            switchCompat.setChecked(false);
+            imageViewMode.setImageResource(R.drawable.sun);
+            imageViewMode2.setImageResource(R.drawable.moonno);
         }
 
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -56,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
                 if (isChecked){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                     switchCompat.setChecked(true);
-                    imageViewMode.setImageResource(R.drawable.moon);
+                    imageViewMode.setImageResource(R.drawable.sunno);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putBoolean("night_mode", true);
                     editor.commit();
-                }else {
+                } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     switchCompat.setChecked(false);
                     imageViewMode.setImageResource(R.drawable.sun);
