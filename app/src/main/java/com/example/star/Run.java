@@ -1,38 +1,26 @@
 package com.example.star;
 
-import static java.lang.Math.round;
-
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Build;
 import android.os.Bundle;
-
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-
+import com.google.android.gms.location.FusedLocationProviderClient;
 
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 public class Run extends AppCompatActivity {
 
@@ -121,7 +109,7 @@ public class Run extends AppCompatActivity {
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public void caluclateDistance() throws InterruptedException {
+    private void caluclateDistance() throws InterruptedException {
             Location p1 = locations.get(locations.size() - 1);
             Location p2 = gps.getLocation();
             locations.add(p2);
@@ -143,14 +131,14 @@ public class Run extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public void stop(View view) {
+    protected void stop(View view) {
         stop = true;
 
     }
 
 
 
-    public boolean checkLocationPermission() {
+    protected boolean checkLocationPermission() {
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission. ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
